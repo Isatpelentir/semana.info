@@ -9,8 +9,60 @@
 
   body{
     font-family: 'Space Mono', monospace;
+    background-color: #e5dafe;
   }
 
   #nav{
-    background-color: #e5dafe;
+    background-color: #22176b;
+    padding-top: 30px;
+    padding-bottom: 50px;
   }
+
+  #nav ul li {
+    list-style: none;
+    display: inline;
+    padding: 5px 0px;
+    margin: 0 5px;
+  }
+
+  #nav ul#menu li {
+    float: left;
+    border-radius: 80px;
+}
+
+#nav ul.right li {
+    float: right;
+}
+
+#nav ul li a {
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+#nav ul#menu li.active {
+    background-color: #895cee;
+}
+
+#nav ul#menu li:hover {
+    background-color: #895cee;
+} 
+
+.bottom{
+  background-color:#e5dafe;
+}
+
+.banner {
+  position: relative;
+}
+
+.banner::before {
+  content: "";
+  background-image: url(img/fundo\ site\ info.avif);
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: top;
+  position: absolute;
+  opacity: 0.2;
+}
