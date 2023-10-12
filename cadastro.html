@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Aluno</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h1>VIII Semana Acadêmica da Computação e Informática </h1>
+        <nav> 
+            <div id="nav">
+            <div class="container clearfix">
+                <ul id="menu">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="#">Parceiros</a></li>
+                    <li><a href="#">Maratona</a></li>
+                    <li><a href="#">Jogos eletrônicos</a></li>
+                    <li><a href="#">Cronogama</a></li>
+                    <li><a href="cadastro.html">Inscreva-se</a></li>
+                </ul>
+            </div>
+           </div> 
+        </nav>
+    </header>
+    <main>
+        <section class="container">
+            <form> <!-- formulário -->
+                <fieldset> <!-- agrupar elementos relacionados em um formulário -->
+                    <legend>Cadastro VIII Semana Acadêmica</legend>
+                    <div class="input-container"> <!--rotulo e campo de entrada-->
+                        <label for="name">Nome</label> <!--rotulo ao campo de entrada-->
+                        <input  type="text" name="nome" id="nome" placeholder="Nome completo" required autofocus> <!--adicionar um campo de entrada ao formulário-->
+                    </div>
+                    <div class="input-container">
+                        <label for="matricula">Matrícula</label>
+                        <input type="number" name="matricua" id="matricula" placeholder="Matrícula" pattern="\d{10}" required>
+                    </div>
+                    
+                    <div class="input-container">
+                        <label for="cpf">CPF</label>
+                        <input type="text" name="CPF" id="CPF" placeholder="CPF" pattern="\d{3}.\d{3}.\d{3}-\d{2}" required>
+                    </div>
+
+                    <div class="input-container">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Email" required>
+                    </div>
+
+                    <div class="input-container">
+                        <label for="turma">Turma</label>
+                        <select name="turma" id="turma" required> <!--lista de opções-->
+                            <option value="">Selecione</option>
+                            <option value="1ºA Informática">1ºA Informática</option>
+                            <option value="Tecnico Integrado">Técnico Integrado</option>
+                            <option value="Tecnico Integrado">Tecnico Integrado</option>
+                            <option value="Tecnico Integrado">Tecnico Integrado</option>
+                            <option value="Tecnico Integrado">Tecnico Integrado</option>
+                            <option value="Ciencia da commputacao">Ciência da Computação</option>
+                        </select>
+                    </div>
+                    </div>
+                    <div class="actions">
+                        <button type="submit">Cadastrar</button>
+                        <button type="reset">Limpar</button>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 VIII Semana Acadêmica da Computação e Informática | Criado por Isabele Tomazoni e Sophia Duquesne</p>
+    </footer>
+</body>
+</html>
