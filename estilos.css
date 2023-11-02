@@ -22,6 +22,16 @@
     padding-right: 20px; 
 }
 
+.container {
+  width: 1140px;
+  max-width: 100%;
+  margin: auto;
+}
+
+.clearfix {
+  overflow: hidden;
+}
+
 header li:hover{
     background-color:#442e97;
     border-radius: 5px;
@@ -35,6 +45,7 @@ header li:hover{
     background-color: #22176b;
     padding-top: 20px;
     padding-bottom: 20px;
+    
   }
 
   #nav ul li {
@@ -53,7 +64,7 @@ header li:hover{
     float: right;
 }
 
-#nav ul li a {
+#nav ul li a{
     padding-left: 10px;
     padding-right: 10px;
     color: white;
@@ -182,6 +193,10 @@ input[type=email] {
     padding-right: 10px;
 }
 
+section {padding-bottom: 20px;}
+blockquote, p, hr {margin-bottom: 10px;}
+
+
 .col-1 { width: 8.33%; }
 .col-2 { width: 16.66%;}
 .col-3 { width: 25% }
@@ -200,9 +215,9 @@ input[type=email] {
   padding: 40px;
 }
 
-.saibamais button{
+.saibamais button {
   background-color: #442e97;
-  color: #fff;
+  color:#fff;
   border: none;
   padding: 7px 14px;
   margin-top: 15px;
@@ -210,6 +225,19 @@ input[type=email] {
   transition: background-color 0.3s ease; 
 }
 
+.saibamais a{
+  color: #e5dafe;
+  text-decoration: none;
+}
+
 .saibamais button:hover{
   background-color: #895cee;
+}
+
+/*img.img_ajuste{
+  object-fit: cover;
+  border-radius: 8px 8px 0 0 ;
+  padding-top: 15px;
+  width: 100%;
+  height: 200px;
 }
