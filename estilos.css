@@ -16,8 +16,8 @@
     background-color:#22176b;
     color:#895cee; 
     text-align: center; 
-    padding-top: 20px; 
-    padding-bottom: 20px; 
+    padding-top: 10px; 
+    padding-bottom: 15px; 
     padding-left: 20px; 
     padding-right: 20px; 
 }
@@ -47,6 +47,10 @@ header li:hover{
     
   }
 
+  #nav img{
+   padding: 15px;
+  }
+
   #nav ul li {
     list-style: none;
     display: inline;
@@ -64,8 +68,8 @@ header li:hover{
 }
 
 #nav ul li a{
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
     color: white;
     text-decoration: none;
 }
@@ -76,6 +80,8 @@ header li:hover{
 
 #nav ul#menu li:hover {
     background-color: #442e97;
+    padding: 5px 5px 5px 5px;
+    transform: scale(1.2);
     transition: 0.5s;
 } 
 
@@ -222,6 +228,10 @@ blockquote, p, hr {margin-bottom: 10px;}
   padding: 40px;
 }
 
+.a img:hover{
+  transform: scale(1.1);
+}
+
 .saibamais button {
   background-color: #442e97;
   color:#fff;
@@ -239,6 +249,7 @@ blockquote, p, hr {margin-bottom: 10px;}
 
 .saibamais button:hover{
   background-color: #895cee;
+  transform: scale(1.1);
 }
 
 img.img_ajuste{
@@ -303,5 +314,21 @@ button.parceiros:hover{
   background-color: #6645c2;
   border-radius: 50px;
   border: 1px;
-  transition: 0.3s;
+  transition: 0.5s;
+
+}
+
+.logo img{
+  max-width: 100px;
+  height: auto;
+  justify-content: space-between;
+  display: flex;
+  padding: 10px;
+}
+
+.logo img:hover{
+  transform: scale(1.5);
+}
+.col-4 img:hover{
+  transform: scale(1.1);
 }
