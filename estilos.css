@@ -40,7 +40,6 @@ header li:hover{
     padding: 5px;
 }
 
-
   #nav{
     background-color: #22176b;
     padding-top: 20px;
@@ -79,6 +78,12 @@ header li:hover{
     background-color: #442e97;
     transition: 0.5s;
 } 
+
+img.img_menu{
+  width: 70px;
+  padding-top: 0px;
+  padding-right: 10px;
+}
 
 .lilas{
   background-color:#e5dafe;
@@ -217,7 +222,6 @@ blockquote, p, hr {margin-bottom: 10px;}
   padding: 40px;
 }
 
-
 .saibamais button {
   background-color: #442e97;
   color:#fff;
@@ -225,7 +229,7 @@ blockquote, p, hr {margin-bottom: 10px;}
   padding: 7px 14px;
   margin-top: 15px;
   cursor: pointer; 
-  transition: background-color 0.3s ease; 
+  transition: 0.3s ease; 
 }
 
 .saibamais a{
@@ -266,4 +270,38 @@ img.img_ajuste{
 
 .maratona button:hover{
   background-color: #895cee;
+}
+
+img.img_parceiros{
+  width: 250px;
+}
+
+#parceiros h1 {
+ color: #22176b;
+ padding-top: 10px;
+}
+
+#parceiros p{
+  color: black;
+  padding-top: 40px;
+}
+
+#parceiros i{
+  color: black;
+}
+
+#parceiros a{
+  color: black;
+  text-decoration: none;
+}
+
+button.parceiros{
+  background-color: #e5dafe;
+}
+
+button.parceiros:hover{
+  background-color: #6645c2;
+  border-radius: 50px;
+  border: 1px;
+  transition: 0.3s;
 }
