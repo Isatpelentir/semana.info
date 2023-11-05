@@ -15,8 +15,8 @@
   header {
     background-color:#22176b;
     color:#895cee; 
-    text-align: center; 
-    padding-top: 10px; 
+    text-align:center; 
+    padding-top: 5px; 
     padding-bottom: 15px; 
     padding-left: 20px; 
     padding-right: 20px; 
@@ -101,12 +101,12 @@ img.img_menu{
 
 .banner::before {
   content: "";
-  background-image: url(img/fundo\ site\ info.avif);
+  background-image: url('img/fundo\ site\ info.avif');
   background-size: cover; 
   background-repeat: no-repeat;
   background-position: top;
   position: absolute;
-  opacity: 0.2;
+  opacity: 0.5;
   top: 0;
   left: 0;
   bottom: 0;
@@ -201,14 +201,18 @@ input[type=email] {
     text-align: center;
   }
 
+
   [class*="col-"] {
     float: left; 
     padding-right: 10px;
 }
 
-section {padding-bottom: 20px;}
+section {padding-bottom: 25px;}
 blockquote, p, hr {margin-bottom: 10px;}
 
+#inicio h1, h3{
+  padding: 10px;
+}
 
 .col-1 { width: 8.33%; }
 .col-2 { width: 16.66%;}
@@ -226,6 +230,12 @@ blockquote, p, hr {margin-bottom: 10px;}
 #apoiadores {
   text-align: center;
   padding: 40px;
+}
+
+#apoiadores h1:hover{
+  transform: scale(1.5);
+  transition: 500ms linear;
+  color: #22176b;
 }
 
 .a img:hover{
@@ -281,6 +291,7 @@ img.img_ajuste{
 
 .maratona button:hover{
   background-color: #895cee;
+  transform: scale(1.1);
 }
 
 img.img_parceiros{
@@ -288,13 +299,17 @@ img.img_parceiros{
 }
 
 #parceiros h1 {
- color: #22176b;
- padding-top: 10px;
+ color: black;
+ padding-top: 25px;
+ padding-bottom: 15px;
 }
 
 #parceiros p{
   color: black;
-  padding-top: 40px;
+  padding-top: 35px;
+  padding-left: 20px;
+  padding-right: 70px;
+
 }
 
 #parceiros i{
@@ -306,8 +321,14 @@ img.img_parceiros{
   text-decoration: none;
 }
 
+#parceiros h1:hover{
+  transform: scale(1.5);
+  transition: 500ms linear;
+  color: #22176b;
+}
+
 button.parceiros{
-  background-color: #e5dafe;
+  background-color: #8b66e2;
 }
 
 button.parceiros:hover{
@@ -327,8 +348,93 @@ button.parceiros:hover{
 }
 
 .logo img:hover{
-  transform: scale(1.5);
+  transform: scale(1.4);
+  transition: 500ms linear;
 }
+
 .col-4 img:hover{
   transform: scale(1.1);
+  transition: 500ms linear;
 }
+
+.col-3 img:hover{
+  transform: scale(1.2);
+  transition: 500ms linear;
+}
+
+.card {
+  text-align:justify;
+  width: calc(33.33% - 10px); 
+  height: 250px; 
+  width: 1200px;
+  margin: 15px; 
+  padding: 15px;
+  background-color: #8b66e2;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  float: left; 
+  color: #8369c9;
+}
+
+.card img {
+  padding-top: 15px;
+  margin-bottom: 12px; 
+}
+#programação{
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#programação h1 {
+  color: black;
+  padding-top: 25px;
+  padding-bottom: 25px;
+ }
+ 
+ #programação p{
+   color: black;
+   padding-top: 20px;
+   padding-left: 20px;
+   padding-right: 70px;
+ 
+ }
+
+ #programação h1:hover{
+   transform: scale(1.4);
+   transition: 500ms linear;
+   color: #22176b;
+ }
+ #programação h2:hover{
+  transform: scale(1.3);
+  transition: 500ms linear;
+  color: #22176b;
+}
+#programação h3:hover{
+  transform: scale(1.3);
+  transition: 500ms linear;
+  color: #22176b;
+}
+#programação p:hover{
+  transform: scale(1.2);
+  transition: 500ms linear;
+  color: #22176b;
+}
+
+ button.programação{
+   background-color: #8b66e2;
+ }
+ 
+ button.programação:hover{
+   background-color: #6645c2;
+   border-radius: 50px;
+   border: 1px;
+   transition: 500ms linear;
+   transform: scale(1.3);
+ 
+ }
+
+ .jogos {
+  text-align: center;
+  padding: 40px;
+ }
