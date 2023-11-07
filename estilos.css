@@ -269,10 +269,32 @@ img.img_ajuste{
   padding-top: 15px;
 }
 
-#maratona{
+.maratona{
+  padding: 30px;
+  text-align: center;
+}   
+
+.fundo_maratona{
+  height: 230px;
   padding: 40px;
-    text-align: center;
+  text-align: center;
+  position: relative;
+}   
+
+.fundo_maratona::before {
+  content: "";
+  background-image: url('img/programação.jpg');
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: top;
+  position: absolute;
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
+
 
 .maratona button {
   background-color: #442e97;
@@ -313,6 +335,70 @@ img.img_ajuste{
   background-color: #895cee;
   transform: scale(1.1);
 }
+
+.fundo_league{
+  height: 240px;
+  padding: 40px;
+  text-align: center;
+  position: relative;
+}   
+
+.fundo_league::before {
+  content: "";
+  background-image: url('img/league.jpg');
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: top;
+  position: absolute;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.fundo_valorant{
+  height: 230px;
+  padding: 40px;
+  text-align: center;
+  position: relative;
+}   
+
+.fundo_valorant::before {
+  content: "";
+  background-image: url('img/valorant.jpg');
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: top;
+  position: absolute;
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.fundo_freefire{
+  height: 230px;
+  padding: 40px;
+  text-align: center;
+  position: relative;
+}   
+
+.fundo_freefire::before {
+  content: "";
+  background-image: url('img/freefire.jpeg');
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: top;
+  position: absolute;
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
 
 .fotos button {
   background-color: #442e97;
@@ -424,8 +510,8 @@ button.parceiros:hover{
 }
 #programação{
   text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 #programação h1 {
@@ -433,6 +519,11 @@ button.parceiros:hover{
   padding-top: 25px;
   padding-bottom: 25px;
  }
+
+#programação h2{
+  padding-top: 20px;
+  padding-bottom: 25px;
+}
  
  #programação p{
    color: black;
@@ -481,8 +572,13 @@ button.parceiros:hover{
   padding: 40px;
  }
 
+ 
 #cronograma {
   text-align: center;
+}
+#cronograma h1 {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .XXIIIout{
@@ -524,7 +620,7 @@ button.parceiros:hover{
 
 .cardcronogramaXXIII{
     width: 1200px; 
-    height: 350px; 
+    height: 600px; 
     margin: 10px; 
     padding: 20px; 
     background-color: #895cee;
@@ -534,7 +630,7 @@ button.parceiros:hover{
 
 .cardcronogramaXXIV{
     width: 1200px;
-    height: 750px; 
+    height: 830px; 
     margin: 10px; 
     padding: 20px; 
     background-color: #895cee;

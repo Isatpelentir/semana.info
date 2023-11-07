@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro Aluno</title>
+    <script src="script.js"></script>
     <link rel="stylesheet" href="estilos.css">
+    <link rel="shortcut icon" href="img/image-removebg-preview.png"> 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
 </head>
@@ -20,7 +22,7 @@
                     <li><a href="index.html"><i class="fa fa-home"></i></a> </li>
                     <li><a href="parceiros.html">Parceiros</a></li>
                     <li><a href="maratona.html">Maratona e Jogos Eletrônicos</a></li>
-                    <li><a href="cronograma.html">Cronogama</a></li>
+                    <li><a href="cronograma.html">Cronograma</a></li>
                     <li class="active">
                         <a href="cadastro.html">Inscreva-se</a></li>
                 </ul> 
@@ -34,7 +36,7 @@
                 <fieldset> <!-- agrupar elementos relacionados em um formulário -->
                     <legend>Cadastro VIII Semana Acadêmica</legend>
                     <div class="input-container"> <!--rotulo e campo de entrada-->
-                        <label for="name">Nome</label> <!--rotulo ao campo de entrada-->
+                        <label for="nome">Nome</label> <!--rotulo ao campo de entrada-->
                         <input  type="text" name="nome" id="nome" placeholder="Nome completo" required autofocus> <!--adicionar um campo de entrada ao formulário-->
                     </div>
                     <div class="input-container">
@@ -43,8 +45,8 @@
                     </div>
                     
                     <div class="input-container">
-                        <label for="cpf">CPF</label>
-                        <input type="text" name="CPF" id="CPF" placeholder="CPF" pattern="\d{3}.\d{3}.\d{3}-\d{2}" required>
+                        <label for="cpff">CPF</label>
+                        <input type="text" name="cpf" id="cpf" placeholder="xxx.xxx.xxx-xx" pattern="\d{3}.\d{3}.\d{3}-\d{2}" required>
                     </div>
 
                     <div class="input-container">
@@ -67,7 +69,7 @@
                     </div>
                     </div>
                     <div class="actions">
-                        <button type="submit">Cadastrar</button>
+                        <button type="submit" onclick="validarFormulario(event)">Inscreva-se</button>
                         <button type="reset">Limpar</button>
                     </div>
                 </fieldset>
