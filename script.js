@@ -1,11 +1,11 @@
 function validarFormulario(event) {
     event.preventDefault(); // Impedir a ação padrão do formulário
 
-    var nome = document.forms["cadastro"]["nome"].value;
-    var matricula = document.forms["cadastro"]["matricula"].value;
-    var cpf = document.forms["cadastro"]["cpf"].value;
-    var email = document.forms["cadastro"]["email"].value;
-    var turma = document.forms["cadastro"]["turma"].value;
+    var nome = document.forms["inscricao"]["nome"].value;
+    var matricula = document.forms["inscricao"]["matricula"].value;
+    var cpf = document.forms["inscricao"]["cpf"].value;
+    var email = document.forms["inscricao"]["email"].value;
+    var turma = document.forms["inscricao"]["turma"].value;
 
     // Validar se os campos obrigatórios estão preenchidos
     if (nome === "" || matricula === "" || cpf === "" || email === "" || turma === "") {
@@ -32,14 +32,14 @@ function validarFormulario(event) {
 }
 
 function salvarInformacoesLocalmente() {
-    var nome = document.forms["cadastro"]["nome"].value;
-    var matricula = document.forms["cadastro"]["matricula"].value;
-    var cpf = document.forms["cadastro"]["cpf"].value;
-    var email = document.forms["cadastro"]["email"].value;
-    var turma = document.forms["cadastro"]["turma"].value;
+    var nome = document.forms["inscricao"]["nome"].value;
+    var matricula = document.forms["inscricao"]["matricula"].value;
+    var cpf = document.forms["inscricao"]["cpf"].value;
+    var email = document.forms["inscricao"]["email"].value;
+    var turma = document.forms["inscricao"]["turma"].value;
 
     // Salvar as informações localmente (por exemplo, no LocalStorage)
-    var cadastro = {
+    var inscricao = {
         nome: nome,
         matricula: matricula,
         cpf: cpf,
@@ -48,10 +48,10 @@ function salvarInformacoesLocalmente() {
     };
 
     // Converter o objeto para uma string JSON
-    var cadastroJSON = JSON.stringify(cadastro);
+    var inscricaoJSON = JSON.stringify(inscricao);
 
     // Armazenar os dados localmente
-    localStorage.setItem("cadastro", cadastroJSON);
+    localStorage.setItem("inscricao", inscricaoJSON);
 
     // Exibir uma mensagem de inscrição bem-sucedida
     alert("Inscrição efetuada com sucesso");

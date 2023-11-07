@@ -24,7 +24,7 @@
                     <li><a href="maratona.html">Maratona e Jogos Eletrônicos</a></li>
                     <li><a href="cronograma.html">Cronograma</a></li>
                     <li class="active">
-                        <a href="cadastro.html">Inscreva-se</a></li>
+                        <a href="cadastro_evento.html">Inscreva-se</a></li>
                 </ul> 
             </div>
            </div> 
@@ -32,16 +32,16 @@
     </header>
     <main>
         <section class="container">
-            <form> <!-- formulário -->
+            <form name="inscricao"> <!-- formulário -->
                 <fieldset> <!-- agrupar elementos relacionados em um formulário -->
                     <legend>Cadastro VIII Semana Acadêmica</legend>
-                    <div class="input-container"> <!--rotulo e campo de entrada-->
-                        <label for="nome">Nome</label> <!--rotulo ao campo de entrada-->
-                        <input  type="text" name="nome" id="nome" placeholder="Nome completo" required autofocus> <!--adicionar um campo de entrada ao formulário-->
+                    <div class="input-container">
+                        <label for="nome">Nome do Aluno:</label>
+                        <input placeholder="Nome Completo" type="text" id="nome" name="nome" required autofocus>
                     </div>
                     <div class="input-container">
                         <label for="matricula">Matrícula</label>
-                        <input type="number" name="matricua" id="matricula" placeholder="Matrícula" pattern="\d{10}" required>
+                        <input type="number" name="matricula" id="matricula" placeholder="Matrícula" pattern="\d{10}" required>
                     </div>
                     
                     <div class="input-container">
